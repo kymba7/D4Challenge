@@ -12,7 +12,7 @@ public class Main {
         System.out.println("This calculator will calculate an employee's annual salary into bi-weekly, bi-monthly and monthly paychecks.");
         System.out.println("YOu will need the employees First and Last name, Employee number and their annual salary.");
         String nextEmp = ("Yes");
-        while (nextEmp.equals("Yes")){
+        while (nextEmp.equalsIgnoreCase("Yes")){
         System.out.println("Please enter the employee's first name");
         String firstName = sc.nextLine();
         System.out.println("Please enter the employee's Last name.");
@@ -33,7 +33,7 @@ public class Main {
         System.out.println("Would you like to calculate the Salary for another employee?");
         nextEmp = sc.nextLine();
 
-        if (nextEmp.equals("Yes")){
+        if (nextEmp.equalsIgnoreCase("Yes")){
             System.out.println("Okay");
             System.out.println("");
 
@@ -45,3 +45,4 @@ public class Main {
 
     }
 }
+//following is the simplified and correct way to solve the D4 Challenge
